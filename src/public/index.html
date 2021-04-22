@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a228862dbf.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="backgroundWrap" class="bg">
+        <ul class="bg-area">
+            <li><i class="fas fa-smile-wink"></i></li>
+            <li><i class="fas fa-smile"></i></li>
+            <li><i class="fas fa-grin-tongue-wink"></i></li>
+            <li><i class="fas fa-laugh-wink"></i></li>
+            <li><i class="fas fa-grin-squint"></i></li>
+            <li><i class="fas fa-grin-tongue-wink"></i></li>
+            <li><i class="fas fa-smile-beam"></i></li>
+            <li><i class="fas fa-grin-squint-tears"></i></li>
+            <li><i class="fas fa-grin-stars"></i></li>
+            <li><i class="fas fa-smile-wink"></i></li>
+            <li><i class="fas fa-smile-wink"></i></li>
+            <li><i class="fas fa-smile"></i></li>
+            <li><i class="fas fa-grin-tongue-wink"></i></li>
+            <li><i class="fas fa-laugh-wink"></i></li>
+            <li><i class="fas fa-grin-squint"></i></li>
+            <li><i class="fas fa-grin-tongue-wink"></i></li>
+            <li><i class="fas fa-smile-beam"></i></li>
+            <li><i class="fas fa-grin-squint-tears"></i></li>
+            <li><i class="fas fa-grin-stars"></i></li>
+            <li><i class="fas fa-smile-wink"></i></li>
+        </ul>
+    </div>
+    <div class="card col-md-5 mt-5 mx-auto border-0" id="nickWrap">
+        <div class="card-header background-header text-right">
+            <h3 class="tittle"><i class="fas fa-smile"></i> ChatCord</h3>
+        </div>
+        <p id="nickError"></p>
+        <div class="card-body background-body">
+            <h1 class="tittle-body">Enter your Username</h1>
+            <form id="nickForm">
+                <input type="text" id="nickname" class="form-control" autofocus required>
+                <button type="submit" class="btn btn-info mt-2">
+                    <i class="fas fa-paper-plane"></i>
+                    <p>Send</p>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container" id="contentWrap">
+        <div class="row mt-5">
+            <div class="col-md-8 offset-md-1">
+                <div class="card border-0">
+                    <div class="card-header background-header">
+                        <h4 class="tittle">Let's Chat</h4>
+                    </div>
+                    <div id="chat" class="card-body">
+
+                    </div>
+                    <form id="message-form" class="card-footer">
+                        <p id="chatError"></p>
+                        <div class="input-group">
+                            <input type="text" id="message" class="form-control" autofocus autocomplete="off">
+                            <div class="input-group-append">
+                                <button id="emojibtn" type="button" class="btn btn-info">
+                                    <i class="fas fa-grin"></i>
+                                </button>
+                                <button type="submit" class="btn btn-info">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                        <div id="drawer" class="emoji-drawer hidden">
+                            <!-- Smileys -->
+                            <div id="smileys">
+                                <div id="emoji">😀</div>
+                                <div id="emoji">😃</div>
+                                <div id="emoji">😄</div>
+                                <div id="emoji">😁</div>
+                                <div id="emoji">😆</div>
+                                <div id="emoji">😅</div>
+                                <div id="emoji">😂</div>
+                                <div id="emoji">🤣</div>
+                                <div id="emoji">😊</div>
+                                <div id="emoji">😇</div>
+                                <div id="emoji">🙂</div>
+                                <div id="emoji">🙃</div>
+                                <div id="emoji">😉</div>
+                                <div id="emoji">😌</div>
+                                <div id="emoji">😍</div>
+                                <div id="emoji">🥰</div>
+                                <div id="emoji">😘</div>
+                                <div id="emoji">😗</div>
+                                <div id="emoji">😗</div>
+                                <div id="emoji">😙</div>
+                                <div id="emoji">😚</div>
+                                <div id="emoji">😋</div>
+                                <div id="emoji">😛</div>
+                                <div id="emoji">😝</div>
+                                <div id="emoji">😜</div>
+                                <div id="emoji">🤪</div>
+                                <div id="emoji">🤨</div>
+                                <div id="emoji">🧐</div>
+                                <div id="emoji">🤓</div>
+                                <div id="emoji">😎</div>
+                                <div id="emoji">🤩</div>
+                                <div id="emoji">🥳</div>
+                                <div id="emoji">😏</div>
+                                <div id="emoji">😒</div>
+                                <div id="emoji">😞</div>
+                                <div id="emoji">😔</div>
+                                <div id="emoji">😟</div>
+                                <div id="emoji">😕</div>
+                                <div id="emoji">🙁</div>
+                                <div id="emoji">☹️</div>
+                                <div id="emoji">😣</div>
+                                <div id="emoji">😖</div>
+                                <div id="emoji">😫</div>
+                                <div id="emoji">😩</div>
+                                <div id="emoji">🥺</div>
+                                <div id="emoji">😢</div>
+                                <div id="emoji">😭</div>
+                                <div id="emoji">😤</div>
+                                <div id="emoji">😠</div>
+                                <div id="emoji">😡</div>
+                                <div id="emoji">🤬</div>
+                                <div id="emoji">🤯</div>
+                                <div id="emoji">😳</div>
+                                <div id="emoji">🥵</div>
+                                <div id="emoji">🥶</div>
+                                <div id="emoji">😱</div>
+                                <div id="emoji">😨</div>
+                                <div id="emoji">😰</div>
+                                <div id="emoji">😥</div>
+                                <div id="emoji">😓</div>
+                                <div id="emoji">🤗</div>
+                                <div id="emoji">🤔</div>
+                                <div id="emoji">🤭</div>
+                                <div id="emoji">🤫</div>
+                                <div id="emoji">🤥</div>
+                                <div id="emoji">😶</div>
+                                <div id="emoji">😐</div>
+                                <div id="emoji">😑</div>
+                                <div id="emoji">😬</div>
+                                <div id="emoji">🙄</div>
+                                <div id="emoji">😯</div>
+                                <div id="emoji">😦</div>
+                                <div id="emoji">😧</div>
+                                <div id="emoji">😮</div>
+                                <div id="emoji">😲</div>
+                                <div id="emoji">🥱</div>
+                                <div id="emoji">😴</div>
+                                <div id="emoji">🤤</div>
+                                <div id="emoji">😪</div>
+                                <div id="emoji">😵</div>
+                                <div id="emoji">🤐</div>
+                                <div id="emoji">🥴</div>
+                                <div id="emoji">🤢</div>
+                                <div id="emoji">🤮</div>
+                                <div id="emoji">🤧</div>
+                                <div id="emoji">😷</div>
+                                <div id="emoji">🤒</div>
+                                <div id="emoji">🤕</div>
+                                <div id="emoji">🤑</div>
+                                <div id="emoji">🤠</div>
+                                <div id="emoji">😈</div>
+                                <div id="emoji">👿</div>
+                                <div id="emoji">👹</div>
+                                <div id="emoji">👺</div>
+                                <div id="emoji">🤡</div>
+                                <div id="emoji">💩</div>
+                                <div id="emoji">👻</div>
+                                <div id="emoji">💀</div>
+                                <div id="emoji">☠️</div>
+                                <div id="emoji">👽</div>
+                                <div id="emoji">👾</div>
+                                <div id="emoji">🤖</div>
+                                <div id="emoji">🎃</div>
+                                <div id="emoji">😸</div>
+                                <div id="emoji">😹</div>
+                                <div id="emoji">😻</div>
+                                <div id="emoji">😼</div>
+                                <div id="emoji">😽</div>
+                                <div id="emoji">🙀</div>
+                                <div id="emoji">😿</div>
+                                <div id="emoji">😾</div>
+                            </div>
+                            <!-- Gestures and Body Parts-->
+                            <div id="gesturesparts">
+                                <div id="emoji">👋</div>
+                                <div id="emoji">🤚</div>
+                                <div id="emoji">🖐</div>
+                                <div id="emoji">✋</div>
+                                <div id="emoji">🖖</div>
+                                <div id="emoji">👌</div>
+                                <div id="emoji">🤏</div>
+                                <div id="emoji">✌️</div>
+                                <div id="emoji">🤞</div>
+                                <div id="emoji">🤟</div>
+                                <div id="emoji">🤘</div>
+                                <div id="emoji">🤙</div>
+                                <div id="emoji">👈</div>
+                                <div id="emoji">👉</div>
+                                <div id="emoji">👆</div>
+                                <div id="emoji">🖕</div>
+                                <div id="emoji">👇</div>
+                                <div id="emoji">☝️</div>
+                                <div id="emoji">👍</div>
+                                <div id="emoji">👎</div>
+                                <div id="emoji">✊</div>
+                                <div id="emoji">👊</div>
+                                <div id="emoji">🤛</div>
+                                <div id="emoji">🤜</div>
+                                <div id="emoji">👏</div>
+                                <div id="emoji">🙌</div>
+                                <div id="emoji">👐</div>
+                                <div id="emoji">🤲</div>
+                                <div id="emoji">🤝</div>
+                                <div id="emoji">🙏</div>
+                                <div id="emoji">✍️</div>
+                                <div id="emoji">💅</div>
+                                <div id="emoji">🤳</div>
+                                <div id="emoji">💪</div>
+                                <div id="emoji">🦾</div>
+                                <div id="emoji">🦵</div>
+                                <div id="emoji">🦿</div>
+                                <div id="emoji">🦶</div>
+                                <div id="emoji">👣</div>
+                                <div id="emoji">👂</div>
+                                <div id="emoji">🦻</div>
+                                <div id="emoji">👃</div>
+                                <div id="emoji">🧠</div>
+                                <div id="emoji">🦷</div>
+                                <div id="emoji">🦴</div>
+                                <div id="emoji">👀</div>
+                                <div id="emoji">👅</div>
+                                <div id="emoji">👄</div>
+                                <div id="emoji">💋</div>
+                                <div id="emoji">🩸</div>
+                                <div id="emoji">🔎</div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header" id="chatUsersCount">
+
+                    </div>
+                    <div class="card-body">
+                        <div id="usernames"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="/js/main.js" charset="utf-8"></script>
+</body>
+
+</html>

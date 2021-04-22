@@ -1,0 +1,19 @@
+{
+  "name": "ProyectChat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jQuery": "^1.7.4",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.7",
+    "socket.io": "^4.0.1"
+  }
+}

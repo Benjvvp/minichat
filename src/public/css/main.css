@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: -webkit-linear-gradient(165deg, #000000, #424242);
+    background: -moz-linear-gradient(165deg, #000000, #424242);
+    background: -ms-linear-gradient(165deg, #000000, #424242);
+    background: -o-linear-gradient(165deg, #000000, #424242);
+    background: linear-gradient(165deg, #000000, #424242);
+
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+#contentWrap{
+    display: none;
+}
+.time{
+    font-size: 10px;
+    padding-bottom: 0;
+    padding-top: 1px;
+    margin-bottom: 0;
+}
+.background-header{
+    background-color: #0dcaf0 !important;
+}
+.background-body{
+    background: -webkit-linear-gradient(153deg, #000000, #00444d);
+    background: -moz-linear-gradient(153deg, #000000, #00444d);
+    background: -ms-linear-gradient(153deg, #000000, #00444d);
+    background: -o-linear-gradient(153deg, #000000, #00444d);
+    background: linear-gradient(153deg, #000000, #00444d);
+
+}
+.tittle{
+    color: black;
+    font-weight: bold;
+    font-size: 2.5em;
+    font-family: 'Orelega One', cursive;
+    line-height: 1.5;
+    margin-bottom: 0;
+    letter-spacing: 1.5px;
+}
+#nickError{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.tittle-body{
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+}
+.btn p{
+    display: inline-block;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.countusers{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-family: Arial;
+}
+#chat{
+    max-height: 40em;
+    height: 20em;
+    overflow: auto;
+}
+.card-footer{
+    height: 12em;
+}
+/*Emoji Chat*/
+.emoji-drawer {
+    display: grid;
+    float: right;
+    width: auto;
+    background-color: white;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.281);
+    overflow: auto;
+    max-height: 20em;
+}
+#smileys{
+    display: contents;
+}
+#gesturesparts{
+    display: contents;
+}
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+#emoji {
+    text-align: center;
+    font-size: 24px;
+    padding: 8px;
+}
+
+#emoji:hover {
+    cursor: pointer;
+}
+/*Background Emoji Animations*/
+.bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vw;
+    z-index: -2000;
+}
+
+.bg-area li{
+    position: absolute;
+    list-style: none;
+    bottom: -100px;
+    left: 5%;
+    font-size: 5rem;
+    animation: spin 10s linear infinite;
+}
+.bg-area li i{
+    color: gray;
+}
+.bg-area li:nth-child(2){
+    left: 5%;
+    animation-delay: 4s;
+    animation-duration: 7s;
+}
+.bg-area li:nth-child(3){
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 5s;
+}
+.bg-area li:nth-child(4){
+    left: 15%;
+    animation-delay: 4s;
+    animation-duration: 9;
+}
+.bg-area li:nth-child(5){
+    left: 20%;
+    animation-delay: 2s;
+    animation-duration: 7s;
+}
+.bg-area li:nth-child(6){
+    left: 25%;
+    animation-delay: 4s;
+    animation-duration: 5s;
+}
+.bg-area li:nth-child(7){
+    left: 30%;
+    animation-delay: 2s;
+    animation-duration: 9s;
+}
+.bg-area li:nth-child(8){
+    left: 35%;
+    animation-delay: 4s;
+    animation-duration: 7s;
+}
+.bg-area li:nth-child(9){
+    left: 40%;
+    animation-delay: 2s;
+    animation-duration: 5s;
+}
+.bg-area li:nth-child(10){
+    left: 45%;
+    animation-delay: 4s;
+    animation-duration: 9s;
+}
+.bg-area li:nth-child(11){
+    left: 50%;
+    animation-delay: 2s;
+    animation-duration: 7s;
+}
+.bg-area li:nth-child(12){
+    left: 55%;
+    animation-delay: 4s;
+    animation-duration: 5s;
+}
+.bg-area li:nth-child(13){
+    left: 60%;
+    animation-delay: 2s;
+    animation-duration: 8s;
+}
+.bg-area li:nth-child(14){
+    left: 65%;
+    animation-delay: 4s;
+    animation-duration: 7s;
+}
+.bg-area li:nth-child(15){
+    left: 70%;
+    animation-delay: 2s;
+    animation-duration: 5s;
+}
+.bg-area li:nth-child(16){
+    left: 75%;
+    animation-delay: 4s;
+    animation-duration: 9s;
+}
+.bg-area li:nth-child(17){
+    left: 80%;
+    animation-delay: 2s;
+    animation-duration: 7s;
+}
+.bg-area li:nth-child(18){
+    left: 85%;
+    animation-delay: 4s;
+    animation-duration: 5s;
+}
+.bg-area li:nth-child(19){
+    left: 90%;
+    animation-delay: 2s;
+    animation-duration: 9s;
+}
+.bg-area li:nth-child(20){
+    left: 95%;
+    animation-delay: 4s;
+    animation-duration: 7s;
+}
+.bg-area li:nth-child(21){
+    left: 100%;
+    animation-delay: 2s;
+    animation-duration: 5s;
+}
+
+@keyframes spin{
+    100%{
+        transform: translateY(-40em) rotate(360deg);
+        opacity: 0;
+    }
+}
+/*Message Other */
+.message-other{
+    display: flexbox;
+    padding-right: 50%;
+    width: 100%;
+    padding-top: 10px;
+}
+.message-other h6{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: black;
+}
+.content-other{
+    font-size: 14px;
+    color: white;
+    background-color: rgb(35, 67, 156);
+    padding: 10px;
+    border-radius: 10px;
+}
+.content-other p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.time{
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+/*My Message*/
+.message{
+    display: flexbox;
+    padding-left: 50%;
+    width: 100%;
+    padding-top: 10px;
+}
+.content{
+    font-size: 14px;
+    color: white;
+    background-color: rgb(63, 103, 212);
+    padding: 10px;
+    border-radius: 10px;
+}
+.content p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
